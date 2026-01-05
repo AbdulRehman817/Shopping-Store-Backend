@@ -65,6 +65,7 @@ const findAllProduct = async (req, res) => {
   try {
     // * Sab products ko database se fetch karo
     const products = await ShoppingProducts.find();
+    console.log("products", products);
 
     res.status(200).json({
       message: "All products fetched successfully",

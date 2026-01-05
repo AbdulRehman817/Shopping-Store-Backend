@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use("/api/v1", adminRoute);
 app.use("/api/v1", cartRoute);
 app.use("/api/v1", orderRoute);
-app.use("/api/v1", adminRoute);
+app.use("/api/v1", productRoute);
 app.use("/api/v1", shippingdetailsRoute);
 app.use("/api/v1", userRoute);
 app.get("/", (req, res) => {
